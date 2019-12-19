@@ -1,8 +1,9 @@
-package com.redis.Redis;
+package com.redis.stringRedisTemplate;
 
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class RedisString {
 
+    @Resource
     private StringRedisTemplate stringRedisTemplate;
 
     public void redisString(){

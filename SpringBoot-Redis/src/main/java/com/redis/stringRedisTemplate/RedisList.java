@@ -1,4 +1,4 @@
-package com.redis.Redis;
+package com.redis.stringRedisTemplate;
 
 
 import org.springframework.data.redis.core.StringRedisTemplate;
