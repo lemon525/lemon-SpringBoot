@@ -12,8 +12,8 @@ public interface StudentService {
     @Cacheable(key = "#p0")
     Student getStudent(Integer id);
 
-    @CachePut(key = "#p0.sno")
-    void updateStudent(Student student);
+    @CachePut(key = "#p0.id")
+    Student updateStudent(Student student);
 
     @CacheEvict(key = "#p0", allEntries = true)
     void deleteById(Integer id);

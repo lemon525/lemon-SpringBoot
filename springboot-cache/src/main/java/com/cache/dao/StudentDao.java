@@ -12,7 +12,7 @@ public interface StudentDao {
     @Select("select id,name,gender from student where id = #{id}")
     Student findById(Integer id);
 
-    @Update("update student set gender = #{gender} where id = {id}")
+    @Update("update student set name = #{name} where id = #{id}")
     void updateGenderById(Student student);
 
     @Delete("delete from student where id = #{id} ")
